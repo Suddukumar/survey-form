@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="survey-container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="name">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+            <label for="age">Age:(Optional)</label>
+            <input type="number" id="age" name="age" min="18" max="99">
+
+            <label>Which option best describes your current role?</label>
+            <select name="role" id="role">
+                <option disabled selected value>Select your role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time learner</option>
+                <option value="other">Others</option>
+            </select>
+
+            <label for="user">Would you recommend freeCodeCamp to a friend?</label>
+            <select name="user" id="user">
+                <option disabled selected value>chosse one</option>
+                <option value="definitely">Definitely</option>
+                <option value="maybe">Maybe</option>
+                <option value="not-sure">Not sure</option>
+            </select>
+
+            <label>What is your favorite feature of freeCodeCamp? </label>
+            <select name="fav" id="fav">
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open">Open source</option>
+            </select>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <label>Favorite Color:</label>
+            <select id="color" name="color">
+                <option disabled selected value>Select an option</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+
+            <footer class="copyright">
+                &copy; 2023 SUDDU KUMAR. All rights reserved.
+              </footer>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
